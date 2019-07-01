@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reverseArray</title>
+</head>
+<body>
+<script>
+    let arr = [1,2,3,4,5,6,7,8];
+    for (first = 0, last = arr.length-1; first<last; first++, last--){
+        let reverseArr = arr[first];
+        arr[first] = arr[last];
+        arr[last] = reverseArr;
+    }
+    document.write(arr);
+
+</script>
+</body>
+</html>
